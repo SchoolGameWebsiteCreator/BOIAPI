@@ -87,7 +87,7 @@ Note that the identifier generated are only unique for the current command - the
 
 ## License
 
-View the license file [here](https://github.com/jamesmcfadden/binding-of-isaac-api/blob/master/LICENSE).
+View the license file [here](https://github.com/jamesmcfadden/binding-of-isaac-api/blob/master/LICENSE.md).
 
 ## Disclaimer
 
