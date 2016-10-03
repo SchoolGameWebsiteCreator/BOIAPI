@@ -15,7 +15,7 @@ The current release can be found at [isaac.jamesmcfadden.co.uk/api/v1](https://i
 
 ## Documentation
 
-Documentation is currently being written. For the time being, API endpoints can be found on the API index ([isaac.jamesmcfadden.co.uk/api/v1](https://isaac.jamesmcfadden.co.uk/api/v1)).
+Documentation can be found at [docs.bindingofisaac.apiary.io](http://docs.bindingofisaac.apiary.io) ([source](https://github.com/jamesmcfadden/binding-of-isaac-api/blob/master/apiary.apib)).
 
 ## Contributing
 
