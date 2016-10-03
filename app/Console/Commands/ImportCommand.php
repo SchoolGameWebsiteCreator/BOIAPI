@@ -35,6 +35,7 @@ class ImportCommand extends Command
      */
     protected $tables = [
         'items',
+        'bosses',
     ];
 
     /**

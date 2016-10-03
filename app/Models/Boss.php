@@ -7,7 +7,7 @@ use App\Concerns\Model\UrlAttributeTrait;
 use App\Contracts\Model\ListableResourceInterface;
 use App\Contracts\Model\ShowableResourceInterface;
 
-class Item extends BaseModel implements ListableResourceInterface, ShowableResourceInterface
+class Boss extends BaseModel implements ListableResourceInterface, ShowableResourceInterface
 {
     use UrlAttributeTrait;
 
@@ -19,13 +19,14 @@ class Item extends BaseModel implements ListableResourceInterface, ShowableResou
     /**
      * @var string
      */
-    protected $resource = 'item';
+    protected $resource = 'boss';
 
     /**
      * @var array
      */
     protected $appends = [
         'url',
+        'sprite_url',
     ];
 
     /**
@@ -44,5 +45,18 @@ class Item extends BaseModel implements ListableResourceInterface, ShowableResou
     public function scopeShow(Builder $query)
     {
         return $query;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSpriteUrlAttribute()
+    {
+        return url(
+            sprintf(
+                'img/sprites/bosses/%s.png',
+                strtolower(str_slug($this->attributes['name']))
+            )
+        );
     }
 }
