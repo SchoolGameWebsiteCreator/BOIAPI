@@ -1,5 +1,7 @@
 # The Binding of Isaac RESTful API
 
+[![Build Status](https://travis-ci.org/jamesmcfadden/binding-of-isaac-api.svg?branch=master)](https://travis-ci.org/jamesmcfadden/binding-of-isaac-api)
+
 The Binding of Isaac API is a project aiming to make available as much data about the Binding of Isaac game series as possible.
 
 The current release can be found at [isaac.jamesmcfadden.co.uk/api/v1](https://isaac.jamesmcfadden.co.uk/api/v1). Note that the API is still in early development, so changes to the data may happen regularly.
