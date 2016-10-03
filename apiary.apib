@@ -1,0 +1,56 @@
+FORMAT: 1A
+HOST: https://isaac.jamesmcfadden.co.uk/api/v1
+
+# Binding of Isaac API
+
+Documentation for the Open Source Binding of Isaac RESTful API.
+
+The source code is hosted at [https://github.com/jamesmcfadden/binding-of-isaac-api](https://github.com/jamesmcfadden/binding-of-isaac-api).
+
+**Note that the API is still in early development, so breaking changes can, and most likely will, happen.**
+
+## Items [/item]
+
+### List all Items [GET]
+
++ Request
+
+    + Headers
+
+            Accept: application/json
+
++ Response 200 (application/json)
+
+        {
+            "count": 50,
+            "total": 461,
+            "first": "https://isaac.jamesmcfadden.co.uk/api/v1/item?page=1",
+            "next": "https://isaac.jamesmcfadden.co.uk/api/v1/item?page=2",
+            "previous": null,
+            "last": "https://isaac.jamesmcfadden.co.uk/api/v1/item?page=10",
+            "data": [
+                {
+                    "id": "c12kq",
+                    "name": "???'s Only Friend",
+                    "url": "https://isaac.jamesmcfadden.co.uk/api/v1/item/c12kq"
+                }
+            ]
+        }
+
+### Retrieve an Item [GET /item/{id}]
+
++ Request
+
+    + Headers
+
+            Accept: application/json
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "id": "2JrEs",
+                "name": "Pentagram",
+                "url": "https://isaac.jamesmcfadden.co.uk/api/v1/item/2JrEs"
+            }
