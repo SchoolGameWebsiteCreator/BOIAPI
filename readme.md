@@ -85,7 +85,7 @@ You may run the following command in the project root to generate as many identi
 
     php artisan generate-ids 10
 
-Note that the identifier generated are only unique for the current command - there is a small chance the identifier is already in use in an existing data file, but MySQL will let you know if there is upon importing. All identifiers should have a character length of 5.
+Note that the identifiers generated are only unique for the current command - there is a small chance the identifier is already in use in an existing data file, but MySQL will let you know if there is upon importing. All identifiers should have a character length of 5.
 
 ## License
 
