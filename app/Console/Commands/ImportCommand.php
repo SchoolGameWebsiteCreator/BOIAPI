@@ -41,6 +41,8 @@ class ImportCommand extends Command
         'pickup_types',
         'pickups',
         'pill_appearances',
+        'chapters',
+        'environments',
     ];
 
     /**

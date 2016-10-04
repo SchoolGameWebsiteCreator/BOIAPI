@@ -351,6 +351,99 @@ The source code is hosted at [https://github.com/jamesmcfadden/binding-of-isaac-
                 "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/bosses/qVIN9.png"
             }
 
+## Chapters [/chapters]
+
+### List all Chapters [GET]
+
++ Request
+
+    + Headers
+
+            Accept: application/json
+
++ Response 200 (application/json)
+
+        {  
+            "count":7,
+            "total":7,
+            "first":"https://isaac.jamesmcfadden.co.uk/api/v1/chapter?page=1",
+            "next":null,
+            "previous":null,
+            "last":"https://isaac.jamesmcfadden.co.uk/api/v1/chapter?page=1",
+            "data":[  
+                {  
+                    "id":"VgNLa",
+                    "name":"Chapter 1",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/chapter/VgNLa"
+                },
+                {  
+                    "id":"On9K6",
+                    "name":"Chapter 2",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/chapter/On9K6"
+                },
+                {  
+                    "id":"8nSAJ",
+                    "name":"Chapter 3",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/chapter/8nSAJ"
+                },
+                {  
+                    "id":"WDRwO",
+                    "name":"Chapter 4",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/chapter/WDRwO"
+                },
+                {  
+                    "id":"9L0st",
+                    "name":"Chapter 4.5",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/chapter/9L0st"
+                },
+                {  
+                    "id":"zmJ0v",
+                    "name":"Chapter 5",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/chapter/zmJ0v"
+                },
+                {  
+                    "id":"6d7id",
+                    "name":"Chapter 6",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/chapter/6d7id"
+                }
+            ]
+        }
+
+### Retrieve a Chapter [GET /chapter/{id}]
+
++ Request
+
+    + Headers
+
+            Accept: application/json
+
++ Response 200 (application/json)
+
+    + Body
+
+            {  
+                "id":"VgNLa",
+                "name":"Chapter 1",
+                "url":"https://isaac.jamesmcfadden.co.uk/api/v1/chapter/VgNLa",
+                "environments":[  
+                    {  
+                        "id":"g9yJM",
+                        "name":"The Basement",
+                        "url":"https://isaac.jamesmcfadden.co.uk/api/v1/environment/g9yJM"
+                    },
+                    {  
+                        "id":"HRej5",
+                        "name":"The Cellar",
+                        "url":"https://isaac.jamesmcfadden.co.uk/api/v1/environment/HRej5"
+                    },
+                    {  
+                        "id":"zPJZN",
+                        "name":"Burning Basement",
+                        "url":"https://isaac.jamesmcfadden.co.uk/api/v1/environment/zPJZN"
+                    }
+                ]
+            }
+
 ## Characters [/character]
 
 ### List all Characters [GET]
@@ -469,6 +562,137 @@ The source code is hosted at [https://github.com/jamesmcfadden/binding-of-isaac-
                 "name":"Isaac",
                 "url":"https://isaac.jamesmcfadden.co.uk/api/v1/character/kyGxc",
                 "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/characters/kyGxc.png"
+            }
+
+## Environments [/environment]
+
+### List all Environments [GET]
+
++ Request
+
+    + Headers
+
+            Accept: application/json
+
++ Response 200 (application/json)
+
+        {  
+            "count":17,
+            "total":17,
+            "first":"https://isaac.jamesmcfadden.co.uk/api/v1/environment?page=1",
+            "next":null,
+            "previous":null,
+            "last":"https://isaac.jamesmcfadden.co.uk/api/v1/environment?page=1",
+            "data":[  
+                {  
+                    "id":"jgvTX",
+                    "name":"Blue Womb",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/environment/jgvTX"
+                },
+                {  
+                    "id":"zPJZN",
+                    "name":"Burning Basement",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/environment/zPJZN"
+                },
+                {  
+                    "id":"oUhWp",
+                    "name":"Cathedral",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/environment/oUhWp"
+                },
+                {  
+                    "id":"RTgYK",
+                    "name":"Dank Depths",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/environment/RTgYK"
+                },
+                {  
+                    "id":"q3fpJ",
+                    "name":"Dark Room",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/environment/q3fpJ"
+                },
+                {  
+                    "id":"JE9Ur",
+                    "name":"Flooded Caves",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/environment/JE9Ur"
+                },
+                {  
+                    "id":"YC4Sl",
+                    "name":"Necropolis",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/environment/YC4Sl"
+                },
+                {  
+                    "id":"zAIPN",
+                    "name":"Scarred Womb",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/environment/zAIPN"
+                },
+                {  
+                    "id":"e7NFa",
+                    "name":"Sheol",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/environment/e7NFa"
+                },
+                {  
+                    "id":"g9yJM",
+                    "name":"The Basement",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/environment/g9yJM"
+                },
+                {  
+                    "id":"eUOVP",
+                    "name":"The Catacombs",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/environment/eUOVP"
+                },
+                {  
+                    "id":"oNmdb",
+                    "name":"The Caves",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/environment/oNmdb"
+                },
+                {  
+                    "id":"HRej5",
+                    "name":"The Cellar",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/environment/HRej5"
+                },
+                {  
+                    "id":"eLU2G",
+                    "name":"The Chest",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/environment/eLU2G"
+                },
+                {  
+                    "id":"UDvZZ",
+                    "name":"The Depths",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/environment/UDvZZ"
+                },
+                {  
+                    "id":"coTOZ",
+                    "name":"The Womb",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/environment/coTOZ"
+                },
+                {  
+                    "id":"xHnVN",
+                    "name":"Utero",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/environment/xHnVN"
+                }
+            ]
+        }
+
+### Retrieve an Environment [GET /environment/{id}]
+
++ Request
+
+    + Headers
+
+            Accept: application/json
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "id":"g9yJM",
+                "name":"The Basement",
+                "url":"https://isaac.jamesmcfadden.co.uk/api/v1/environment/g9yJM",
+                "chapter": {
+                    "id":"VgNLa",
+                    "name":"Chapter 1",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/chapter/VgNLa"
+                }
             }
 
 ## Items [/item]
@@ -1611,8 +1835,8 @@ The source code is hosted at [https://github.com/jamesmcfadden/binding-of-isaac-
     + Body
 
             {
-                "id": "TtUz4",
-                "identifier": "black-yellow",
-                "url": "https://isaac.jamesmcfadden.co.uk/api/v1/pill-appearance/TtUz4",
-                "sprite_url": "https://isaac.jamesmcfadden.co.uk/img/sprites/pill-appearances/TtUz4.png"
+                "id":"TtUz4",
+                "identifier":"black-yellow",
+                "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pill-appearance/TtUz4",
+                "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pill-appearances/TtUz4.png"
             }
