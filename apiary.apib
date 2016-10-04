@@ -9,348 +9,6 @@ The source code is hosted at [https://github.com/jamesmcfadden/binding-of-isaac-
 
 **Note that the API is still in early development, so breaking changes can, and most likely will, happen.**
 
-## Items [/item]
-
-### List all Items [GET]
-
-+ Request
-
-    + Headers
-
-            Accept: application/json
-
-+ Response 200 (application/json)
-
-        {  
-            "count":50,
-            "total":438,
-            "first":"https://isaac.jamesmcfadden.co.uk/api/v1/item?page=1",
-            "next":"https://isaac.jamesmcfadden.co.uk/api/v1/item?page=2",
-            "previous":null,
-            "last":"https://isaac.jamesmcfadden.co.uk/api/v1/item?page=9",
-            "data":[  
-                {  
-                    "id":"c12kq",
-                    "name":"???'s Only Friend",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/c12kq",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/c12kq.png"
-                },
-                {  
-                    "id":"gGBZ0",
-                    "name":"<3",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/gGBZ0",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/ggbz0.png"
-                },
-                {  
-                    "id":"Fi7wn",
-                    "name":"1up!",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/Fi7wn",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/fi7wn.png"
-                },
-                {  
-                    "id":"5eMPp",
-                    "name":"20/20",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/5eMPp",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/5empp.png"
-                },
-                {  
-                    "id":"xp9U9",
-                    "name":"3 Dollar Bill",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/xp9U9",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/xp9u9.png"
-                },
-                {  
-                    "id":"y7NCo",
-                    "name":"8 Inch Nails",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/y7NCo",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/y7nco.png"
-                },
-                {  
-                    "id":"GGxkj",
-                    "name":"9 Volt",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/GGxkj",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/ggxkj.png"
-                },
-                {  
-                    "id":"YHhYP",
-                    "name":"A Dollar",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/YHhYP",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/yhhyp.png"
-                },
-                {  
-                    "id":"pYWTI",
-                    "name":"A Lump Of Coal",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/pYWTI",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/pywti.png"
-                },
-                {  
-                    "id":"fXgdx",
-                    "name":"A Quarter",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/fXgdx",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/fxgdx.png"
-                },
-                {  
-                    "id":"CraPZ",
-                    "name":"A Snack",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/CraPZ",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/crapz.png"
-                },
-                {  
-                    "id":"wvkEw",
-                    "name":"Abaddon",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/wvkEw",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/wvkew.png"
-                },
-                {  
-                    "id":"TGsYa",
-                    "name":"Abel",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/TGsYa",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/tgsya.png"
-                },
-                {  
-                    "id":"hz3cQ",
-                    "name":"Anarchist Cookbook",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/hz3cQ",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/hz3cq.png"
-                },
-                {  
-                    "id":"eOTdf",
-                    "name":"Anemic",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/eOTdf",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/eotdf.png"
-                },
-                {  
-                    "id":"iUbbQ",
-                    "name":"Ankh",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/iUbbQ",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/iubbq.png"
-                },
-                {  
-                    "id":"iSdFu",
-                    "name":"Anti-Gravity",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/iSdFu",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/isdfu.png"
-                },
-                {  
-                    "id":"On84I",
-                    "name":"Aquarius",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/On84I",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/on84i.png"
-                },
-                {  
-                    "id":"rEky9",
-                    "name":"Aries",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/rEky9",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/reky9.png"
-                },
-                {  
-                    "id":"D9B0M",
-                    "name":"Athame",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/D9B0M",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/d9b0m.png"
-                },
-                {  
-                    "id":"KQnUV",
-                    "name":"Ball Of Bandages",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/KQnUV",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/kqnuv.png"
-                },
-                {  
-                    "id":"EmDst",
-                    "name":"Ball Of Tar",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/EmDst",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/emdst.png"
-                },
-                {  
-                    "id":"l74LW",
-                    "name":"BBF",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/l74LW",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/l74lw.png"
-                },
-                {  
-                    "id":"IbtH7",
-                    "name":"Best Bud",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/IbtH7",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/ibth7.png"
-                },
-                {  
-                    "id":"esTBU",
-                    "name":"Best Friend",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/esTBU",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/estbu.png"
-                },
-                {  
-                    "id":"o9S30",
-                    "name":"Betrayal",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/o9S30",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/o9s30.png"
-                },
-                {  
-                    "id":"EdMbD",
-                    "name":"BFFS!",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/EdMbD",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/edmbd.png"
-                },
-                {  
-                    "id":"Eipw9",
-                    "name":"Big Fan",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/Eipw9",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/eipw9.png"
-                },
-                {  
-                    "id":"wyQgx",
-                    "name":"Binky",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/wyQgx",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/wyqgx.png"
-                },
-                {  
-                    "id":"UtVjO",
-                    "name":"Black Candle",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/UtVjO",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/utvjo.png"
-                },
-                {  
-                    "id":"jLia3",
-                    "name":"Black Lotus",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/jLia3",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/jlia3.png"
-                },
-                {  
-                    "id":"xmxnZ",
-                    "name":"Black Powder",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/xmxnZ",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/xmxnz.png"
-                },
-                {  
-                    "id":"B4Vbz",
-                    "name":"Blank Card",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/B4Vbz",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/b4vbz.png"
-                },
-                {  
-                    "id":"9haGF",
-                    "name":"Blood Bag",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/9haGF",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/9hagf.png"
-                },
-                {  
-                    "id":"c5PfF",
-                    "name":"Blood Clot",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/c5PfF",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/c5pff.png"
-                },
-                {  
-                    "id":"WMiun",
-                    "name":"Blood Of The Martyr",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/WMiun",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/wmiun.png"
-                },
-                {  
-                    "id":"fPRsJ",
-                    "name":"Blood Rights",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/fPRsJ",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/fprsj.png"
-                },
-                {  
-                    "id":"oxgoK",
-                    "name":"Bloody Lust",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/oxgoK",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/oxgok.png"
-                },
-                {  
-                    "id":"72Dht",
-                    "name":"Blue Cap",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/72Dht",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/72dht.png"
-                },
-                {  
-                    "id":"EhHkb",
-                    "name":"Blue Map",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/EhHkb",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/ehhkb.png"
-                },
-                {  
-                    "id":"HRJ8l",
-                    "name":"Bob's Brain",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/HRJ8l",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/hrj8l.png"
-                },
-                {  
-                    "id":"DrwHN",
-                    "name":"Bob's Curse",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/DrwHN",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/drwhn.png"
-                },
-                {  
-                    "id":"1quq3",
-                    "name":"Bob's Rotten Head",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/1quq3",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/1quq3.png"
-                },
-                {  
-                    "id":"HlFtG",
-                    "name":"Bobby-Bomb",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/HlFtG",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/hlftg.png"
-                },
-                {  
-                    "id":"GBwDx",
-                    "name":"Bogo Bombs",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/GBwDx",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/gbwdx.png"
-                },
-                {  
-                    "id":"J71v7",
-                    "name":"Bomb Bag",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/J71v7",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/j71v7.png"
-                },
-                {  
-                    "id":"3W0mR",
-                    "name":"Bomber Boy",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/3W0mR",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/3w0mr.png"
-                },
-                {  
-                    "id":"fv4EL",
-                    "name":"Book Of Revelations",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/fv4EL",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/fv4el.png"
-                },
-                {  
-                    "id":"LMCDe",
-                    "name":"Book Of Secrets",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/LMCDe",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/lmcde.png"
-                },
-                {  
-                    "id":"KOPsZ",
-                    "name":"Book Of Shadows",
-                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/KOPsZ",
-                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/kopsz.png"
-                }
-            ]
-        }
-
-### Retrieve an Item [GET /item/{id}]
-
-+ Request
-
-    + Headers
-
-            Accept: application/json
-
-+ Response 200 (application/json)
-
-    + Body
-
-            {
-                "id":"2JrEs",
-                "name":"Pentagram",
-                "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/2JrEs",
-                "sprite_url":"http://boi-api.dev/img/sprites/items/2jres.png"
-            }
-
 ## Bosses [/boss]
 
 ### List all Bosses [GET]
@@ -692,6 +350,7 @@ The source code is hosted at [https://github.com/jamesmcfadden/binding-of-isaac-
                 "url":"https://isaac.jamesmcfadden.co.uk/api/v1/boss/qVIN9",
                 "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/bosses/qVIN9.png"
             }
+
 ## Characters [/character]
 
 ### List all Characters [GET]
@@ -808,7 +467,691 @@ The source code is hosted at [https://github.com/jamesmcfadden/binding-of-isaac-
             {
                 "id":"kyGxc",
                 "name":"Isaac",
-                "url":"http://boi-api.dev/api/v1/character/kyGxc",
+                "url":"https://isaac.jamesmcfadden.co.uk/api/v1/character/kyGxc",
                 "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/characters/kyGxc.png"
+            }
+
+## Items [/item]
+
+### List all Items [GET]
+
++ Request
+
+    + Headers
+
+            Accept: application/json
+
++ Response 200 (application/json)
+
+        {  
+            "count":50,
+            "total":438,
+            "first":"https://isaac.jamesmcfadden.co.uk/api/v1/item?page=1",
+            "next":"https://isaac.jamesmcfadden.co.uk/api/v1/item?page=2",
+            "previous":null,
+            "last":"https://isaac.jamesmcfadden.co.uk/api/v1/item?page=9",
+            "data":[  
+                {  
+                    "id":"c12kq",
+                    "name":"???'s Only Friend",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/c12kq",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/c12kq.png"
+                },
+                {  
+                    "id":"gGBZ0",
+                    "name":"<3",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/gGBZ0",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/ggbz0.png"
+                },
+                {  
+                    "id":"Fi7wn",
+                    "name":"1up!",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/Fi7wn",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/fi7wn.png"
+                },
+                {  
+                    "id":"5eMPp",
+                    "name":"20/20",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/5eMPp",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/5empp.png"
+                },
+                {  
+                    "id":"xp9U9",
+                    "name":"3 Dollar Bill",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/xp9U9",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/xp9u9.png"
+                },
+                {  
+                    "id":"y7NCo",
+                    "name":"8 Inch Nails",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/y7NCo",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/y7nco.png"
+                },
+                {  
+                    "id":"GGxkj",
+                    "name":"9 Volt",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/GGxkj",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/ggxkj.png"
+                },
+                {  
+                    "id":"YHhYP",
+                    "name":"A Dollar",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/YHhYP",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/yhhyp.png"
+                },
+                {  
+                    "id":"pYWTI",
+                    "name":"A Lump Of Coal",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/pYWTI",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/pywti.png"
+                },
+                {  
+                    "id":"fXgdx",
+                    "name":"A Quarter",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/fXgdx",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/fxgdx.png"
+                },
+                {  
+                    "id":"CraPZ",
+                    "name":"A Snack",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/CraPZ",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/crapz.png"
+                },
+                {  
+                    "id":"wvkEw",
+                    "name":"Abaddon",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/wvkEw",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/wvkew.png"
+                },
+                {  
+                    "id":"TGsYa",
+                    "name":"Abel",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/TGsYa",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/tgsya.png"
+                },
+                {  
+                    "id":"hz3cQ",
+                    "name":"Anarchist Cookbook",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/hz3cQ",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/hz3cq.png"
+                },
+                {  
+                    "id":"eOTdf",
+                    "name":"Anemic",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/eOTdf",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/eotdf.png"
+                },
+                {  
+                    "id":"iUbbQ",
+                    "name":"Ankh",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/iUbbQ",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/iubbq.png"
+                },
+                {  
+                    "id":"iSdFu",
+                    "name":"Anti-Gravity",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/iSdFu",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/isdfu.png"
+                },
+                {  
+                    "id":"On84I",
+                    "name":"Aquarius",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/On84I",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/on84i.png"
+                },
+                {  
+                    "id":"rEky9",
+                    "name":"Aries",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/rEky9",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/reky9.png"
+                },
+                {  
+                    "id":"D9B0M",
+                    "name":"Athame",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/D9B0M",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/d9b0m.png"
+                },
+                {  
+                    "id":"KQnUV",
+                    "name":"Ball Of Bandages",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/KQnUV",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/kqnuv.png"
+                },
+                {  
+                    "id":"EmDst",
+                    "name":"Ball Of Tar",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/EmDst",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/emdst.png"
+                },
+                {  
+                    "id":"l74LW",
+                    "name":"BBF",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/l74LW",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/l74lw.png"
+                },
+                {  
+                    "id":"IbtH7",
+                    "name":"Best Bud",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/IbtH7",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/ibth7.png"
+                },
+                {  
+                    "id":"esTBU",
+                    "name":"Best Friend",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/esTBU",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/estbu.png"
+                },
+                {  
+                    "id":"o9S30",
+                    "name":"Betrayal",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/o9S30",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/o9s30.png"
+                },
+                {  
+                    "id":"EdMbD",
+                    "name":"BFFS!",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/EdMbD",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/edmbd.png"
+                },
+                {  
+                    "id":"Eipw9",
+                    "name":"Big Fan",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/Eipw9",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/eipw9.png"
+                },
+                {  
+                    "id":"wyQgx",
+                    "name":"Binky",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/wyQgx",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/wyqgx.png"
+                },
+                {  
+                    "id":"UtVjO",
+                    "name":"Black Candle",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/UtVjO",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/utvjo.png"
+                },
+                {  
+                    "id":"jLia3",
+                    "name":"Black Lotus",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/jLia3",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/jlia3.png"
+                },
+                {  
+                    "id":"xmxnZ",
+                    "name":"Black Powder",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/xmxnZ",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/xmxnz.png"
+                },
+                {  
+                    "id":"B4Vbz",
+                    "name":"Blank Card",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/B4Vbz",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/b4vbz.png"
+                },
+                {  
+                    "id":"9haGF",
+                    "name":"Blood Bag",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/9haGF",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/9hagf.png"
+                },
+                {  
+                    "id":"c5PfF",
+                    "name":"Blood Clot",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/c5PfF",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/c5pff.png"
+                },
+                {  
+                    "id":"WMiun",
+                    "name":"Blood Of The Martyr",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/WMiun",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/wmiun.png"
+                },
+                {  
+                    "id":"fPRsJ",
+                    "name":"Blood Rights",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/fPRsJ",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/fprsj.png"
+                },
+                {  
+                    "id":"oxgoK",
+                    "name":"Bloody Lust",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/oxgoK",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/oxgok.png"
+                },
+                {  
+                    "id":"72Dht",
+                    "name":"Blue Cap",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/72Dht",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/72dht.png"
+                },
+                {  
+                    "id":"EhHkb",
+                    "name":"Blue Map",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/EhHkb",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/ehhkb.png"
+                },
+                {  
+                    "id":"HRJ8l",
+                    "name":"Bob's Brain",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/HRJ8l",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/hrj8l.png"
+                },
+                {  
+                    "id":"DrwHN",
+                    "name":"Bob's Curse",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/DrwHN",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/drwhn.png"
+                },
+                {  
+                    "id":"1quq3",
+                    "name":"Bob's Rotten Head",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/1quq3",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/1quq3.png"
+                },
+                {  
+                    "id":"HlFtG",
+                    "name":"Bobby-Bomb",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/HlFtG",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/hlftg.png"
+                },
+                {  
+                    "id":"GBwDx",
+                    "name":"Bogo Bombs",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/GBwDx",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/gbwdx.png"
+                },
+                {  
+                    "id":"J71v7",
+                    "name":"Bomb Bag",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/J71v7",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/j71v7.png"
+                },
+                {  
+                    "id":"3W0mR",
+                    "name":"Bomber Boy",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/3W0mR",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/3w0mr.png"
+                },
+                {  
+                    "id":"fv4EL",
+                    "name":"Book Of Revelations",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/fv4EL",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/fv4el.png"
+                },
+                {  
+                    "id":"LMCDe",
+                    "name":"Book Of Secrets",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/LMCDe",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/lmcde.png"
+                },
+                {  
+                    "id":"KOPsZ",
+                    "name":"Book Of Shadows",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/KOPsZ",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/kopsz.png"
+                }
+            ]
+        }
+
+### Retrieve an Item [GET /item/{id}]
+
++ Request
+
+    + Headers
+
+            Accept: application/json
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "id":"2JrEs",
+                "name":"Pentagram",
+                "url":"https://isaac.jamesmcfadden.co.uk/api/v1/item/2JrEs",
+                "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/items/2jres.png"
+            }
+
+## Monsters [/monster]
+
+### List all Monsters [GET]
+
++ Request
+
+    + Headers
+
+            Accept: application/json
+
++ Response 200 (application/json)
+
+        {  
+            "count":50,
+            "total":167,
+            "first":"https://isaac.jamesmcfadden.co.uk/api/v1/monster?page=1",
+            "next":"https://isaac.jamesmcfadden.co.uk/api/v1/monster?page=2",
+            "previous":null,
+            "last":"https://isaac.jamesmcfadden.co.uk/api/v1/monster?page=4",
+            "data":[  
+                {  
+                    "id":"RsxKO",
+                    "name":"Angelic Baby",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/RsxKO",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/RsxKO.png"
+                },
+                {  
+                    "id":"3ot7Z",
+                    "name":"Attack Fly",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/3ot7Z",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/3ot7Z.png"
+                },
+                {  
+                    "id":"F5svt",
+                    "name":"Baby",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/F5svt",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/F5svt.png"
+                },
+                {  
+                    "id":"icZ0S",
+                    "name":"Baby Long Legs",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/icZ0S",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/icZ0S.png"
+                },
+                {  
+                    "id":"bzWfN",
+                    "name":"Begotten",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/bzWfN",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/bzWfN.png"
+                },
+                {  
+                    "id":"aaW0A",
+                    "name":"Big Spider",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/aaW0A",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/aaW0A.png"
+                },
+                {  
+                    "id":"5eMPp",
+                    "name":"Black Bony",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/5eMPp",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/5eMPp.png"
+                },
+                {  
+                    "id":"xWPxL",
+                    "name":"Black Fly",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/xWPxL",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/xWPxL.png"
+                },
+                {  
+                    "id":"jLia3",
+                    "name":"Black Globin",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/jLia3",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/jLia3.png"
+                },
+                {  
+                    "id":"Njgyo",
+                    "name":"Black Globin's Body",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/Njgyo",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/Njgyo.png"
+                },
+                {  
+                    "id":"yRTrQ",
+                    "name":"Black Maw",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/yRTrQ",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/yRTrQ.png"
+                },
+                {  
+                    "id":"TOwix",
+                    "name":"Blind Creep",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/TOwix",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/TOwix.png"
+                },
+                {  
+                    "id":"CaLD4",
+                    "name":"Bloodshot Eye",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/CaLD4",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/CaLD4.png"
+                },
+                {  
+                    "id":"EdMbD",
+                    "name":"Blubber",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/EdMbD",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/EdMbD.png"
+                },
+                {  
+                    "id":"PHIeR",
+                    "name":"Blue Boil",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/PHIeR",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/PHIeR.png"
+                },
+                {  
+                    "id":"a2IHI",
+                    "name":"Blue Conjoined Fatty",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/a2IHI",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/a2IHI.png"
+                },
+                {  
+                    "id":"nt5Hm",
+                    "name":"Blue Gaper",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/nt5Hm",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/nt5Hm.png"
+                },
+                {  
+                    "id":"af31L",
+                    "name":"Boil",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/af31L",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/af31L.png"
+                },
+                {  
+                    "id":"ROfws",
+                    "name":"Bone Knight",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/ROfws",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/ROfws.png"
+                },
+                {  
+                    "id":"BqZeT",
+                    "name":"Bony",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/BqZeT",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/BqZeT.png"
+                },
+                {  
+                    "id":"gs6UX",
+                    "name":"Boom Fly",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/gs6UX",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/gs6UX.png"
+                },
+                {  
+                    "id":"AlE01",
+                    "name":"Brain",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/AlE01",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/AlE01.png"
+                },
+                {  
+                    "id":"ep7IU",
+                    "name":"Brimstone Grimace",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/ep7IU",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/ep7IU.png"
+                },
+                {  
+                    "id":"e7pWM",
+                    "name":"Buttlicker",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/e7pWM",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/e7pWM.png"
+                },
+                {  
+                    "id":"FjIhO",
+                    "name":"Camillo Jr.",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/FjIhO",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/FjIhO.png"
+                },
+                {  
+                    "id":"hN0mz",
+                    "name":"Charger",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/hN0mz",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/hN0mz.png"
+                },
+                {  
+                    "id":"T2wH6",
+                    "name":"Chubber",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/T2wH6",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/T2wH6.png"
+                },
+                {  
+                    "id":"HRJ8l",
+                    "name":"Clot",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/HRJ8l",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/HRJ8l.png"
+                },
+                {  
+                    "id":"EhHkb",
+                    "name":"Clotty",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/EhHkb",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/EhHkb.png"
+                },
+                {  
+                    "id":"J331A",
+                    "name":"Cod Worm",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/J331A",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/J331A.png"
+                },
+                {  
+                    "id":"EmDst",
+                    "name":"Conjoined Fatty",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/EmDst",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/EmDst.png"
+                },
+                {  
+                    "id":"D4q0q",
+                    "name":"Conjoined Spitty",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/D4q0q",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/D4q0q.png"
+                },
+                {  
+                    "id":"vuKDM",
+                    "name":"Corn Dip",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/vuKDM",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/vuKDM.png"
+                },
+                {  
+                    "id":"bG5Lf",
+                    "name":"Crazy Long Legs",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/bG5Lf",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/bG5Lf.png"
+                },
+                {  
+                    "id":"VKtsc",
+                    "name":"Cyclopia",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/VKtsc",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/VKtsc.png"
+                },
+                {  
+                    "id":"hYD2E",
+                    "name":"Dank Death's Head",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/hYD2E",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/hYD2E.png"
+                },
+                {  
+                    "id":"UtVjO",
+                    "name":"Dank Globin",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/UtVjO",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/UtVjO.png"
+                },
+                {  
+                    "id":"N6WWA",
+                    "name":"Dank Squirt",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/N6WWA",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/N6WWA.png"
+                },
+                {  
+                    "id":"Rty6q",
+                    "name":"Dart Fly",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/Rty6q",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/Rty6q.png"
+                },
+                {  
+                    "id":"zfQ6e",
+                    "name":"Death's Head",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/zfQ6e",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/zfQ6e.png"
+                },
+                {  
+                    "id":"mFJUH",
+                    "name":"Dinga",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/mFJUH",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/mFJUH.png"
+                },
+                {  
+                    "id":"mLE6V",
+                    "name":"Dip",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/mLE6V",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/mLE6V.png"
+                },
+                {  
+                    "id":"vOwTU",
+                    "name":"Dople",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/vOwTU",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/vOwTU.png"
+                },
+                {  
+                    "id":"VXPKR",
+                    "name":"Double Vis",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/VXPKR",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/VXPKR.png"
+                },
+                {  
+                    "id":"abcAv",
+                    "name":"Drowned Boom Fly",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/abcAv",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/abcAv.png"
+                },
+                {  
+                    "id":"KkLTR",
+                    "name":"Drowned Charger",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/KkLTR",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/KkLTR.png"
+                },
+                {  
+                    "id":"Ucw2z",
+                    "name":"Drowned Hive",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/Ucw2z",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/Ucw2z.png"
+                },
+                {  
+                    "id":"DWmFO",
+                    "name":"Dukie",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/DWmFO",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/DWmFO.png"
+                },
+                {  
+                    "id":"m5Qxu",
+                    "name":"Embryo",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/m5Qxu",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/m5Qxu.png"
+                },
+                {  
+                    "id":"ry7Ua",
+                    "name":"Eternal Fly",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/ry7Ua",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/ry7Ua.png"
+                }
+            ]
+        }
+
+### Retrieve a Monster [GET /monster/{id}]
+
++ Request
+
+    + Headers
+
+            Accept: application/json
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "id":"3ot7Z",
+                "name":"Attack Fly",
+                "url":"https://isaac.jamesmcfadden.co.uk/api/v1/monster/3ot7Z",
+                "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/3ot7Z.png"
             }
 

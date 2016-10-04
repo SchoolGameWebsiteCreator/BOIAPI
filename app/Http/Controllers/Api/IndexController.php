@@ -18,6 +18,8 @@ class IndexController
             'api.character.show' => url('/api/v1/character/{character}'),
             'api.item.index' => url('/api/v1/item'),
             'api.item.show' => url('/api/v1/item/{item}'),
+            'api.monster.index' => url('/api/v1/monster'),
+            'api.monster.show' => url('/api/v1/monster/{monster}'),
         ];
     }
 }

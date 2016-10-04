@@ -37,6 +37,7 @@ class ImportCommand extends Command
         'items',
         'bosses',
         'characters',
+        'monsters',
     ];
 
     /**
