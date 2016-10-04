@@ -20,6 +20,8 @@ class IndexController
             'api.character.show' => url('/api/v1/character/{character}'),
             'api.environment.index' => url('/api/v1/environment'),
             'api.environment.show' => url('/api/v1/environment/{environment}'),
+            'api.installment.index' => url('/api/v1/installment'),
+            'api.installment.show' => url('/api/v1/installment/{installment}'),
             'api.item.index' => url('/api/v1/item'),
             'api.item.show' => url('/api/v1/item/{item}'),
             'api.monster.index' => url('/api/v1/monster'),

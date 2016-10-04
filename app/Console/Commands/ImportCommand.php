@@ -43,6 +43,7 @@ class ImportCommand extends Command
         'pill_appearances',
         'chapters',
         'environments',
+        'installments',
     ];
 
     /**

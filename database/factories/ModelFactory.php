@@ -67,3 +67,11 @@ $factory->define(App\Models\Environment::class, function (Faker\Generator $faker
         'chapter_id' => factory(Chapter::class)->create()->id,
     ];
 });
+
+$factory->define(App\Models\Installment::class, function (Faker\Generator $faker) {
+    return [
+        'id' => str_random(5),
+        'name' => $faker->md5,
+        'order' => $faker->unique()->numberBetween(1, 100),
+    ];
+});
