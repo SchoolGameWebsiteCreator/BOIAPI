@@ -55,7 +55,7 @@ class Boss extends BaseModel implements ListableResourceInterface, ShowableResou
         return url(
             sprintf(
                 'img/sprites/bosses/%s.png',
-                strtolower(str_slug($this->attributes['name']))
+                strtolower(str_slug($this->attributes['id']))
             )
         );
     }
