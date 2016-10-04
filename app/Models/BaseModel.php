@@ -10,11 +10,4 @@ class BaseModel extends Model
      * @var bool
      */
     public $incrementing = false;
-
-    /**
-     * @var array
-     */
-    protected $casts = [
-        'id' => 'string',
-    ];
 }
