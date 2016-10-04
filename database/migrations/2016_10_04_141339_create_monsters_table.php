@@ -18,6 +18,7 @@ class CreateMonstersTable extends Migration
             $table->string('name');
 
             $table->primary('id');
+            $table->unique('name');
         });
     }
 
