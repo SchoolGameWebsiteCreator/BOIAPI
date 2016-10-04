@@ -55,7 +55,7 @@ class Item extends BaseModel implements ListableResourceInterface, ShowableResou
         return url(
             sprintf(
                 'img/sprites/items/%s.png',
-                strtolower(str_slug($this->attributes['id']))
+                $this->attributes['id']
             )
         );
     }
