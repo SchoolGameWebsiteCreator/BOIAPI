@@ -1155,3 +1155,464 @@ The source code is hosted at [https://github.com/jamesmcfadden/binding-of-isaac-
                 "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/monsters/3ot7Z.png"
             }
 
+## Pickups [/pickup]
+
+### List all Pickups [GET]
+
++ Request
+
+    + Headers
+
+            Accept: application/json
+
++ Response 200 (application/json)
+
+        {  
+            "count":50,
+            "total":111,
+            "first":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup?page=1",
+            "next":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup?page=2",
+            "previous":null,
+            "last":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup?page=3",
+            "data":[  
+                {  
+                    "id":"xiV0L",
+                    "name":"? Card",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/xiV0L",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/xiV0L.png"
+                },
+                {  
+                    "id":"y0EUn",
+                    "name":"???",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/y0EUn",
+                    "sprite_url":null
+                },
+                {  
+                    "id":"DMatY",
+                    "name":"0 - The Fool",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/DMatY",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/DMatY.png"
+                },
+                {  
+                    "id":"qw2x2",
+                    "name":"1+1 Free Bomb",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/qw2x2",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/qw2x2.png"
+                },
+                {  
+                    "id":"nciX0",
+                    "name":"1+1 Free Heart",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/nciX0",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/nciX0.png"
+                },
+                {  
+                    "id":"bpm1w",
+                    "name":"1+1 Free Penny",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/bpm1w",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/bpm1w.png"
+                },
+                {  
+                    "id":"lAyGY",
+                    "name":"2 of Clubs",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/lAyGY",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/lAyGY.png"
+                },
+                {  
+                    "id":"mTMWK",
+                    "name":"2 of Diamonds",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/mTMWK",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/mTMWK.png"
+                },
+                {  
+                    "id":"c2qFX",
+                    "name":"2 of Hearts",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/c2qFX",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/c2qFX.png"
+                },
+                {  
+                    "id":"bjiAX",
+                    "name":"2 of Spades",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/bjiAX",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/bjiAX.png"
+                },
+                {  
+                    "id":"yCQA8",
+                    "name":"48 Hour Energy",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/yCQA8",
+                    "sprite_url":null
+                },
+                {  
+                    "id":"4CBm7",
+                    "name":"A Card Against Humanity",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/4CBm7",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/4CBm7.png"
+                },
+                {  
+                    "id":"xBA7M",
+                    "name":"Addicted",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/xBA7M",
+                    "sprite_url":null
+                },
+                {  
+                    "id":"oRHRM",
+                    "name":"Algiz",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/oRHRM",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/oRHRM.png"
+                },
+                {  
+                    "id":"LY1YH",
+                    "name":"Amnesia",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/LY1YH",
+                    "sprite_url":null
+                },
+                {  
+                    "id":"dJt3Q",
+                    "name":"Angel Chest",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/dJt3Q",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/dJt3Q.png"
+                },
+                {  
+                    "id":"3k3mJ",
+                    "name":"Ansuz",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/3k3mJ",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/3k3mJ.png"
+                },
+                {  
+                    "id":"aLDjV",
+                    "name":"Bad Gas",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/aLDjV",
+                    "sprite_url":null
+                },
+                {  
+                    "id":"p1fm5",
+                    "name":"Bad Trip",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/p1fm5",
+                    "sprite_url":null
+                },
+                {  
+                    "id":"xfVxJ",
+                    "name":"Balls of Steel",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/xfVxJ",
+                    "sprite_url":null
+                },
+                {  
+                    "id":"L3BXI",
+                    "name":"Berkano",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/L3BXI",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/L3BXI.png"
+                },
+                {  
+                    "id":"52BBd",
+                    "name":"Black Heart",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/52BBd",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/52BBd.png"
+                },
+                {  
+                    "id":"CRcm1",
+                    "name":"Blank Rune",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/CRcm1",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/CRcm1.png"
+                },
+                {  
+                    "id":"y8mEg",
+                    "name":"Bomb",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/y8mEg",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/y8mEg.png"
+                },
+                {  
+                    "id":"1maGQ",
+                    "name":"Bombs Are Key",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/1maGQ",
+                    "sprite_url":null
+                },
+                {  
+                    "id":"HkdeC",
+                    "name":"Brown Chest",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/HkdeC",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/HkdeC.png"
+                },
+                {  
+                    "id":"H3UDb",
+                    "name":"Chaos Card",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/H3UDb",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/H3UDb.png"
+                },
+                {  
+                    "id":"8TZlC",
+                    "name":"Credit Card",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/8TZlC",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/8TZlC.png"
+                },
+                {  
+                    "id":"AiV0a",
+                    "name":"Dagaz",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/AiV0a",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/AiV0a.png"
+                },
+                {  
+                    "id":"6ggH4",
+                    "name":"Dice Shard",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/6ggH4",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/6ggH4.png"
+                },
+                {  
+                    "id":"Af0jY",
+                    "name":"Dime",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/Af0jY",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/Af0jY.png"
+                },
+                {  
+                    "id":"BtUoh",
+                    "name":"Ehwaz",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/BtUoh",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/BtUoh.png"
+                },
+                {  
+                    "id":"yA85P",
+                    "name":"Emergency Contact",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/yA85P",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/yA85P.png"
+                },
+                {  
+                    "id":"qYtzp",
+                    "name":"Eternal Heart",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/qYtzp",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/qYtzp.png"
+                },
+                {  
+                    "id":"16jky",
+                    "name":"Explosive Diarrhea",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/16jky",
+                    "sprite_url":null
+                },
+                {  
+                    "id":"zpb06",
+                    "name":"Friends Till The End!",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/zpb06",
+                    "sprite_url":null
+                },
+                {  
+                    "id":"Ayf44",
+                    "name":"Full Health",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/Ayf44",
+                    "sprite_url":null
+                },
+                {  
+                    "id":"gUnNx",
+                    "name":"Get Out Of Jail Free Card",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/gUnNx",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/gUnNx.png"
+                },
+                {  
+                    "id":"wPaF1",
+                    "name":"Gold Bomb",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/wPaF1",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/wPaF1.png"
+                },
+                {  
+                    "id":"5Zwa4",
+                    "name":"Gold Heart",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/5Zwa4",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/5Zwa4.png"
+                },
+                {  
+                    "id":"j2azR",
+                    "name":"Golden Chest",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/j2azR",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/j2azR.png"
+                },
+                {  
+                    "id":"rx7ei",
+                    "name":"Golden Key",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/rx7ei",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/rx7ei.png"
+                },
+                {  
+                    "id":"VLXAN",
+                    "name":"Hagalaz",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/VLXAN",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/VLXAN.png"
+                },
+                {  
+                    "id":"xUuGo",
+                    "name":"Half Red Heart",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/xUuGo",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/xUuGo.png"
+                },
+                {  
+                    "id":"lZyrt",
+                    "name":"Health Down",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/lZyrt",
+                    "sprite_url":null
+                },
+                {  
+                    "id":"vGRIu",
+                    "name":"Health Up",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/vGRIu",
+                    "sprite_url":null
+                },
+                {  
+                    "id":"Vc9lC",
+                    "name":"Hematemesis",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/Vc9lC",
+                    "sprite_url":null
+                },
+                {  
+                    "id":"dG5cx",
+                    "name":"I - The Magician",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/dG5cx",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/dG5cx.png"
+                },
+                {  
+                    "id":"xRcqJ",
+                    "name":"I Can See Forever",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/xRcqJ",
+                    "sprite_url":null
+                },
+                {  
+                    "id":"Tw3t8",
+                    "name":"I Found Pills",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/Tw3t8",
+                    "sprite_url":null
+                }
+            ]
+        }
+
+### Retrieve a Pickup [GET /pickup/{id}]
+
++ Request
+
+    + Headers
+
+            Accept: application/json
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "id":"qYtzp",
+                "name":"Eternal Heart",
+                "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pickup/qYtzp",
+                "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pickups/qYtzp.png"
+            }
+
+## Pill Appearances [/pill-appearance]
+
+### List all Pill Appearances [GET]
+
++ Request
+
+    + Headers
+
+            Accept: application/json
+
++ Response 200 (application/json)
+
+        {  
+            "count":13,
+            "total":13,
+            "first":"https://isaac.jamesmcfadden.co.uk/api/v1/pill-appearance?page=1",
+            "next":null,
+            "previous":null,
+            "last":"https://isaac.jamesmcfadden.co.uk/api/v1/pill-appearance?page=1",
+            "data":[  
+                {  
+                    "id":"TtUz4",
+                    "identifier":"black-yellow",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pill-appearance/TtUz4",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pill-appearances/TtUz4.png"
+                },
+                {  
+                    "id":"7FqKv",
+                    "identifier":"blue-blue",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pill-appearance/7FqKv",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pill-appearances/7FqKv.png"
+                },
+                {  
+                    "id":"SaB0y",
+                    "identifier":"orange-orange",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pill-appearance/SaB0y",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pill-appearances/SaB0y.png"
+                },
+                {  
+                    "id":"ekzWv",
+                    "identifier":"pink-red",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pill-appearance/ekzWv",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pill-appearances/ekzWv.png"
+                },
+                {  
+                    "id":"Paigw",
+                    "identifier":"red-speckled-red",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pill-appearance/Paigw",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pill-appearances/Paigw.png"
+                },
+                {  
+                    "id":"yzsO8",
+                    "identifier":"speckled-orange-white",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pill-appearance/yzsO8",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pill-appearances/yzsO8.png"
+                },
+                {  
+                    "id":"uTeYC",
+                    "identifier":"violet-cyan",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pill-appearance/uTeYC",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pill-appearances/uTeYC.png"
+                },
+                {  
+                    "id":"hhG1e",
+                    "identifier":"white-black",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pill-appearance/hhG1e",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pill-appearances/hhG1e.png"
+                },
+                {  
+                    "id":"M3FPw",
+                    "identifier":"white-blue",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pill-appearance/M3FPw",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pill-appearances/M3FPw.png"
+                },
+                {  
+                    "id":"kNVz8",
+                    "identifier":"white-cyan",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pill-appearance/kNVz8",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pill-appearances/kNVz8.png"
+                },
+                {  
+                    "id":"xyes3",
+                    "identifier":"white-white",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pill-appearance/xyes3",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pill-appearances/xyes3.png"
+                },
+                {  
+                    "id":"bVnYx",
+                    "identifier":"white-yellow",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pill-appearance/bVnYx",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pill-appearances/bVnYx.png"
+                },
+                {  
+                    "id":"vxiPT",
+                    "identifier":"yellow-orange",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pill-appearance/vxiPT",
+                    "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pill-appearances/vxiPT.png"
+                }
+            ]
+        }
+
+### Retrieve a Pill Appearance [GET /pill-appearance/{id}]
+
++ Request
+
+    + Headers
+
+            Accept: application/json
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "id": "TtUz4",
+                "identifier": "black-yellow",
+                "url": "https://isaac.jamesmcfadden.co.uk/api/v1/pill-appearance/TtUz4",
+                "sprite_url": "https://isaac.jamesmcfadden.co.uk/img/sprites/pill-appearances/TtUz4.png"
+            }

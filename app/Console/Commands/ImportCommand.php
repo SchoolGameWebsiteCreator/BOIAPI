@@ -38,6 +38,9 @@ class ImportCommand extends Command
         'bosses',
         'characters',
         'monsters',
+        'pickup_types',
+        'pickups',
+        'pill_appearances',
     ];
 
     /**
