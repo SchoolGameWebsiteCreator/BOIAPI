@@ -9,6 +9,8 @@ trait SpriteUrlAttributeTrait
     /**
      * Return a sprite URL based on the model resource name.
      *
+     * Checks the path exists; if not, returns null.
+     *
      * @throws \ErrorException
      * @return string
      */
@@ -20,11 +22,14 @@ trait SpriteUrlAttributeTrait
             );
         }
 
-        return url(
-            sprintf(
-                'img/sprites/' . str_plural($this->resource, 2) . '/%s.png',
-                $this->attributes['id']
-            )
+        $path = sprintf(
+            'img/sprites/' . str_plural($this->resource, 2) . '/%s.png',
+            $this->attributes['id']
         );
+
+        if (is_readable(public_path($path))) {
+            return url($path);
+        }
+        return null;
     }
 }
