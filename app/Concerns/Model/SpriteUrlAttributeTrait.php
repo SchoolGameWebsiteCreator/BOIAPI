@@ -4,15 +4,15 @@ namespace App\Concerns\Model;
 
 use ErrorException;
 
-trait UrlAttributeTrait
+trait SpriteUrlAttributeTrait
 {
     /**
-     * Return a resource URL based on the model resource name.
+     * Return a sprite URL based on the model resource name.
      *
      * @throws \ErrorException
      * @return string
      */
-    public function getUrlAttribute()
+    public function getSpriteUrlAttribute()
     {
         if (! property_exists($this, 'resource')) {
             throw new ErrorException(
@@ -20,9 +20,11 @@ trait UrlAttributeTrait
             );
         }
 
-        return route(
-            'api.resource.show',
-            ['resource' => $this->resource, 'id' => $this->attributes['id']]
+        return url(
+            sprintf(
+                'img/sprites/' . str_plural($this->resource, 2) . '/%s.png',
+                $this->attributes['id']
+            )
         );
     }
 }
