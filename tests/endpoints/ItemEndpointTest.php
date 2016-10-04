@@ -55,11 +55,13 @@ class ItemEndpointTest extends TestCase
                     'id' => $first->id,
                     'name' => $first->name,
                     'url' => $first->url,
+                    'sprite_url' => $first->spriteUrl,
                 ],
                 [
                     'id' => $second->id,
                     'name' => $second->name,
                     'url' => $second->url,
+                    'sprite_url' => $second->spriteUrl,
                 ],
             ],
         ]);
@@ -79,6 +81,7 @@ class ItemEndpointTest extends TestCase
             'id' => $item->id,
             'name' => $item->name,
             'url' => $item->url,
+            'sprite_url' => $item->spriteUrl,
         ]);
     }
 }

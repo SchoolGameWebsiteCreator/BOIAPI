@@ -26,6 +26,7 @@ class Item extends BaseModel implements ListableResourceInterface, ShowableResou
      */
     protected $appends = [
         'url',
+        'sprite_url',
     ];
 
     /**
@@ -44,5 +45,18 @@ class Item extends BaseModel implements ListableResourceInterface, ShowableResou
     public function scopeShow(Builder $query)
     {
         return $query;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSpriteUrlAttribute()
+    {
+        return url(
+            sprintf(
+                'img/sprites/items/%s.png',
+                strtolower(str_slug($this->attributes['id']))
+            )
+        );
     }
 }
