@@ -75,3 +75,11 @@ $factory->define(App\Models\Installment::class, function (Faker\Generator $faker
         'order' => $faker->unique()->numberBetween(1, 100),
     ];
 });
+
+$factory->define(App\Models\Stat::class, function (Faker\Generator $faker) {
+    return [
+        'id' => str_random(5),
+        'name' => $faker->md5,
+        'is_hidden' => $faker->boolean,
+    ];
+});

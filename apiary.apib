@@ -1918,3 +1918,99 @@ The source code is hosted at [https://github.com/jamesmcfadden/binding-of-isaac-
                 "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pill-appearance/TtUz4",
                 "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pill-appearances/TtUz4.png"
             }
+
+## Stats [/stat]
+
+### List all Stats [GET]
+
++ Request
+
+    + Headers
+
+            Accept: application/json
+
++ Response 200 (application/json)
+
+        {  
+            "count":9,
+            "total":9,
+            "first":"https://isaac.jamesmcfadden.co.uk/api/v1/stat?page=1",
+            "next":null,
+            "previous":null,
+            "last":"https://isaac.jamesmcfadden.co.uk/api/v1/stat?page=1",
+            "data":[  
+                {  
+                    "id":"W1xxW",
+                    "name":"damage",
+                    "is_hidden":false,
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/stat/W1xxW"
+                },
+                {  
+                    "id":"VeTor",
+                    "name":"health",
+                    "is_hidden":false,
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/stat/VeTor"
+                },
+                {  
+                    "id":"vEmD1",
+                    "name":"knockback",
+                    "is_hidden":true,
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/stat/vEmD1"
+                },
+                {  
+                    "id":"9G1fx",
+                    "name":"luck",
+                    "is_hidden":false,
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/stat/9G1fx"
+                },
+                {  
+                    "id":"C4JTf",
+                    "name":"range",
+                    "is_hidden":false,
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/stat/C4JTf"
+                },
+                {  
+                    "id":"ye8Ub",
+                    "name":"shot speed",
+                    "is_hidden":false,
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/stat/ye8Ub"
+                },
+                {  
+                    "id":"zeH5o",
+                    "name":"speed",
+                    "is_hidden":false,
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/stat/zeH5o"
+                },
+                {  
+                    "id":"EgACE",
+                    "name":"tear height",
+                    "is_hidden":true,
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/stat/EgACE"
+                },
+                {  
+                    "id":"BoHYK",
+                    "name":"tears",
+                    "is_hidden":false,
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/stat/BoHYK"
+                }
+            ]
+        }
+
+### Retrieve a Stat [GET /stat/{id}]
+
++ Request
+
+    + Headers
+
+            Accept: application/json
+
++ Response 200 (application/json)
+
+    + Body
+
+            {  
+                "id":"W1xxW",
+                "name":"damage",
+                "is_hidden":false,
+                "url":"https://isaac.jamesmcfadden.co.uk/api/v1/stat/W1xxW"
+            }

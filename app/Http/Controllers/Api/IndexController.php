@@ -30,6 +30,8 @@ class IndexController
             'api.pickup.show' => url('/api/v1/pickup/{pickup}'),
             'api.pill-appearance.index' => url('/api/v1/pill-appearance'),
             'api.pill-appearance.show' => url('/api/v1/pill-appearance/{pill-appearance}'),
+            'api.stat.index' => url('/api/v1/stat'),
+            'api.stat.show' => url('/api/v1/stat/{stat}'),
         ];
     }
 }

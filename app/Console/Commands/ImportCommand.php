@@ -44,6 +44,7 @@ class ImportCommand extends Command
         'chapters',
         'environments',
         'installments',
+        'stats',
     ];
 
     /**
