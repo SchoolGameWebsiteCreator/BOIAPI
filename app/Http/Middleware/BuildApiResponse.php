@@ -4,12 +4,13 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Response;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 
 class BuildApiResponse
 {
     /**
-     * Build a consistent API response.
+     * Build a consistent JSON response.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure  $next
@@ -20,23 +21,34 @@ class BuildApiResponse
     {
         $response = $next($request);
 
-        if ($response instanceof Response) {
-            $original = $response->getOriginalContent();
-            
-            switch (true) {
-                case $original instanceof LengthAwarePaginator:
-                    $response->setContent([
-                        'count' => $original->count(),
-                        'total' => $original->total(),
-                        'first' => $original->url(1),
-                        'next' => $original->nextPageUrl(),
-                        'previous' => $original->previousPageUrl(),
-                        'last' => $original->url($original->lastPage()),
-                        'data' => $original->getCollection()->toArray(),
-                    ]);
-                    break;
-            }
+        switch (true) {
+            case $response instanceof Response:
+                $responseData = $response->getOriginalContent();
+                break;
+            case $response instanceof JsonResponse:
+                $responseData = $response->getData();
+                break;
         }
-        return $response;
+
+        if ($responseData instanceof LengthAwarePaginator) {
+            $responseData = [
+                'count' => $responseData->count(),
+                'total' => $responseData->total(),
+                'first' => $responseData->url(1),
+                'next' => $responseData->nextPageUrl(),
+                'previous' => $responseData->previousPageUrl(),
+                'last' => $responseData->url($responseData->lastPage()),
+                'data' => $responseData->getCollection()->toArray(),
+            ];
+        }
+
+        return new JsonResponse(
+            $responseData,
+            $response->getStatusCode(),
+            $response->headers->all(),
+            JSON_PRETTY_PRINT
+        );
     }
 }
+
+
