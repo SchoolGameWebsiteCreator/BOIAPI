@@ -1,44 +1,54 @@
 <?php
 
+use App\Models\Stat;
+use App\Models\Item;
+use App\Models\Boss;
+use App\Models\Pickup;
 use App\Models\Chapter;
+use App\Models\Monster;
+use App\Models\Platform;
+use App\Models\Character;
 use App\Models\PickupType;
+use App\Models\Environment;
+use App\Models\Installment;
+use App\Models\PillAppearance;
 
-$factory->define(App\Models\Item::class, function (Faker\Generator $faker) {
+$factory->define(Item::class, function (Faker\Generator $faker) {
     return [
         'id' => str_random(5),
         'name' => $faker->md5,
     ];
 });
 
-$factory->define(App\Models\Boss::class, function (Faker\Generator $faker) {
+$factory->define(Boss::class, function (Faker\Generator $faker) {
     return [
         'id' => str_random(5),
         'name' => $faker->md5,
     ];
 });
 
-$factory->define(App\Models\Character::class, function (Faker\Generator $faker) {
+$factory->define(Character::class, function (Faker\Generator $faker) {
     return [
         'id' => str_random(5),
         'name' => $faker->md5,
     ];
 });
 
-$factory->define(App\Models\Monster::class, function (Faker\Generator $faker) {
+$factory->define(Monster::class, function (Faker\Generator $faker) {
     return [
         'id' => str_random(5),
         'name' => $faker->md5,
     ];
 });
 
-$factory->define(App\Models\PickupType::class, function (Faker\Generator $faker) {
+$factory->define(PickupType::class, function (Faker\Generator $faker) {
     return [
         'id' => str_random(5),
         'name' => $faker->md5,
     ];
 });
 
-$factory->define(App\Models\Pickup::class, function (Faker\Generator $faker) {
+$factory->define(Pickup::class, function (Faker\Generator $faker) {
     return [
         'id' => str_random(5),
         'name' => $faker->md5,
@@ -46,21 +56,21 @@ $factory->define(App\Models\Pickup::class, function (Faker\Generator $faker) {
     ];
 });
 
-$factory->define(App\Models\PillAppearance::class, function (Faker\Generator $faker) {
+$factory->define(PillAppearance::class, function (Faker\Generator $faker) {
     return [
         'id' => str_random(5),
         'identifier' => $faker->slug,
     ];
 });
 
-$factory->define(App\Models\Chapter::class, function (Faker\Generator $faker) {
+$factory->define(Chapter::class, function (Faker\Generator $faker) {
     return [
         'id' => str_random(5),
         'name' => $faker->md5,
     ];
 });
 
-$factory->define(App\Models\Environment::class, function (Faker\Generator $faker) {
+$factory->define(Environment::class, function (Faker\Generator $faker) {
     return [
         'id' => str_random(5),
         'name' => $faker->md5,
@@ -68,7 +78,7 @@ $factory->define(App\Models\Environment::class, function (Faker\Generator $faker
     ];
 });
 
-$factory->define(App\Models\Installment::class, function (Faker\Generator $faker) {
+$factory->define(Installment::class, function (Faker\Generator $faker) {
     return [
         'id' => str_random(5),
         'name' => $faker->md5,
@@ -76,10 +86,17 @@ $factory->define(App\Models\Installment::class, function (Faker\Generator $faker
     ];
 });
 
-$factory->define(App\Models\Stat::class, function (Faker\Generator $faker) {
+$factory->define(Stat::class, function (Faker\Generator $faker) {
     return [
         'id' => str_random(5),
         'name' => $faker->md5,
         'is_hidden' => $faker->boolean,
+    ];
+});
+
+$factory->define(Platform::class, function (Faker\Generator $faker) {
+    return [
+        'id' => str_random(5),
+        'name' => $faker->md5,
     ];
 });

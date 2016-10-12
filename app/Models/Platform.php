@@ -7,7 +7,7 @@ use App\Concerns\Model\UrlAttributeTrait;
 use App\Contracts\Model\ListableResourceInterface;
 use App\Contracts\Model\ShowableResourceInterface;
 
-class Installment extends BaseModel implements ListableResourceInterface, ShowableResourceInterface
+class Platform extends BaseModel implements ListableResourceInterface, ShowableResourceInterface
 {
     use UrlAttributeTrait;
 
@@ -19,7 +19,7 @@ class Installment extends BaseModel implements ListableResourceInterface, Showab
     /**
      * @var string
      */
-    protected $resource = 'installment';
+    protected $resource = 'platform';
 
     /**
      * @var array
@@ -36,19 +36,12 @@ class Installment extends BaseModel implements ListableResourceInterface, Showab
     ];
 
     /**
-     * @var array
-     */
-    protected $casts = [
-        'order' => 'int',
-    ];
-
-    /**
      * @param \Illuminate\Database\Eloquent\Builder $query
      * @return \Illuminate\Database\Eloquent\Builder
      */
     public function scopeList(Builder $query)
     {
-        return $query->orderBy('order', 'asc');
+        return $query->orderBy('name', 'asc');
     }
 
     /**
@@ -58,15 +51,15 @@ class Installment extends BaseModel implements ListableResourceInterface, Showab
     public function scopeShow(Builder $query)
     {
         return $query->with([
-            'platforms',
+            'installments',
         ]);
     }
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
-    public function platforms()
+    public function installments()
     {
-        return $this->belongsToMany(Platform::class, 'platform_installments');
+        return $this->belongsToMany(Installment::class, 'platform_installments');
     }
 }

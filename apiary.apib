@@ -770,7 +770,24 @@ The source code is hosted at [https://github.com/jamesmcfadden/binding-of-isaac-
                 "id":"OhA7W",
                 "name":"The Binding of Isaac",
                 "order":1,
-                "url":"https://isaac.jamesmcfadden.co.uk/api/v1/installment/OhA7W"
+                "url":"https://isaac.jamesmcfadden.co.uk/api/v1/installment/OhA7W",
+                "platforms":[  
+                    {  
+                        "id":"8QfaT",
+                        "name":"Linux",
+                        "url":"https://isaac.jamesmcfadden.co.uk/api/v1/platform/8QfaT"
+                    },
+                    {  
+                        "id":"IGAhq",
+                        "name":"OS X",
+                        "url":"https://isaac.jamesmcfadden.co.uk/api/v1/platform/IGAhq"
+                    },
+                    {  
+                        "id":"r5afF",
+                        "name":"Microsoft Windows",
+                        "url":"https://isaac.jamesmcfadden.co.uk/api/v1/platform/r5afF"
+                    }
+                ]
             }
 
 ## Items [/item]
@@ -1917,6 +1934,127 @@ The source code is hosted at [https://github.com/jamesmcfadden/binding-of-isaac-
                 "identifier":"black-yellow",
                 "url":"https://isaac.jamesmcfadden.co.uk/api/v1/pill-appearance/TtUz4",
                 "sprite_url":"https://isaac.jamesmcfadden.co.uk/img/sprites/pill-appearances/TtUz4.png"
+            }
+
+## Platforms [/platform]
+
+### List all Platforms [GET]
+
++ Request
+
+    + Headers
+
+            Accept: application/json
+
++ Response 200 (application/json)
+
+        {  
+            "total":8,
+            "per_page":50,
+            "current_page":1,
+            "last_page":1,
+            "next_page_url":null,
+            "prev_page_url":null,
+            "from":1,
+            "to":8,
+            "data":[  
+                {  
+                    "id":"8QfaT",
+                    "name":"Linux",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/platform/8QfaT"
+                },
+                {  
+                    "id":"r5afF",
+                    "name":"Microsoft Windows",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/platform/r5afF"
+                },
+                {  
+                    "id":"23lOG",
+                    "name":"New Nintendo 3DS",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/platform/23lOG"
+                },
+                {  
+                    "id":"IGAhq",
+                    "name":"OS X",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/platform/IGAhq"
+                },
+                {  
+                    "id":"o0j6C",
+                    "name":"PlayStation 4",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/platform/o0j6C"
+                },
+                {  
+                    "id":"iZrEm",
+                    "name":"PlayStation Vita",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/platform/iZrEm"
+                },
+                {  
+                    "id":"WtqSz",
+                    "name":"Wii U",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/platform/WtqSz"
+                },
+                {  
+                    "id":"qbGQm",
+                    "name":"Xbox One",
+                    "url":"https://isaac.jamesmcfadden.co.uk/api/v1/platform/qbGQm"
+                }
+            ]
+        }
+
+### Retrieve a Platform [GET /platform/{id}]
+
++ Request
+
+    + Headers
+
+            Accept: application/json
+
++ Response 200 (application/json)
+
+    + Body
+
+            {  
+                "id":"8QfaT",
+                "name":"Linux",
+                "url":"https://isaac.jamesmcfadden.co.uk/api/v1/platform/8QfaT",
+                "installments":[  
+                    {  
+                        "id":"3tRij",
+                        "name":"The Binding of Isaac: Eternal Edition",
+                        "order":3,
+                        "url":"https://isaac.jamesmcfadden.co.uk/api/v1/installment/3tRij"
+                    },
+                    {  
+                        "id":"3vDS3",
+                        "name":"The Binding of Isaac: Afterbirth †",
+                        "order":6,
+                        "url":"https://isaac.jamesmcfadden.co.uk/api/v1/installment/3vDS3"
+                    },
+                    {  
+                        "id":"FOin7",
+                        "name":"The Binding of Isaac: Rebirth",
+                        "order":4,
+                        "url":"https://isaac.jamesmcfadden.co.uk/api/v1/installment/FOin7"
+                    },
+                    {  
+                        "id":"IPhX7",
+                        "name":"The Binding of Isaac: Wrath of the Lamb",
+                        "order":2,
+                        "url":"https://isaac.jamesmcfadden.co.uk/api/v1/installment/IPhX7"
+                    },
+                    {  
+                        "id":"OhA7W",
+                        "name":"The Binding of Isaac",
+                        "order":1,
+                        "url":"https://isaac.jamesmcfadden.co.uk/api/v1/installment/OhA7W"
+                    },
+                    {  
+                        "id":"YhYd4",
+                        "name":"The Binding of Isaac: Afterbirth",
+                        "order":5,
+                        "url":"https://isaac.jamesmcfadden.co.uk/api/v1/installment/YhYd4"
+                    }
+                ]
             }
 
 ## Stats [/stat]

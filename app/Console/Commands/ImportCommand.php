@@ -45,6 +45,8 @@ class ImportCommand extends Command
         'environments',
         'installments',
         'stats',
+        'platforms',
+        'platform_installments',
     ];
 
     /**

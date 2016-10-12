@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Platform;
 use App\Models\Installment;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 
@@ -72,8 +73,11 @@ class InstallmentEndpointTest extends TestCase
      */
     public function testShowInstallmentJsonStructure()
     {
+        $platforms = factory(Platform::class, 3)->create();
+
         $installments = factory(Installment::class, 10)->create();
         $installment = $installments->get(4);
+        $installment->platforms()->attach($platforms->pluck('id')->toArray());
 
         $this->call('GET', sprintf('/api/v1/installment/%s', $installment->id));
 
@@ -82,6 +86,7 @@ class InstallmentEndpointTest extends TestCase
             'name' => $installment->name,
             'order' => $installment->order,
             'url' => $installment->url,
+            'platforms' => $installment->platforms->jsonSerialize(),
         ]);
     }
 }
